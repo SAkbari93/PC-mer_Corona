@@ -5,7 +5,7 @@ their sequence and metadata shared through GISAID, which is used in this researc
 of 28 2019-nCoV sequences and 1 BetaCoV/Bat/RaTG13 sequence may be contacted directly via [www.gisaid.org]([/guides/content/editing-an-existing-page](https://www.gisaid.org/)).
 
 | Accession ID 	| Originating lab 	| Submitting lab 	| Authors 	|
-|---	|:---:	|---:	|---	|
+|:---:	|:---:	|:---:	|:---:	|
 | EPI_ISL_404227 	| Zhejiang Provincial <br>Center for Disease <br>Control and Prevention 	| Department of Microbiology, <br>Zhejiang Provincial Center <br>for Disease Control and Prevention 	| Yin Chen, Yanjun Zhang, Haiyan Mao,  Junhang Pan, Xiuyu Lou, Yiyu Lu,  Juying Yan, Hanping Zhu, Jian Gao,  Yan Feng, Yi Sun, Hao Yan, Zhen Li,  Yisheng Sun, Liming Gong, Qiong Ge,  Wen Shi, Xinying Wang, Wenwu Yao,  Zhangnv Yang, Fang Xu, Chen Chen,  Enfu Chen, Zhen Wang, Zhiping Chen,  Jianmin Jiang, Chonggao Hu 	|
 | EPI_ISL_404228 	| Zhejiang Provincial <br>Center for Disease <br>Control and Prevention   	| Department of Microbiology, <br>Zhejiang Provincial Center <br>for Disease Control and Prevention 	| Yanjun Zhang, Yin Chen, Haiyan Mao, Junhang Pan, Xiuyu Lou, Yiyu Lu, Juying Yan, Hanping Zhu, Jian Gao, Yan Feng, Yi Sun, Hao Yan, Zhen Li, Yisheng Sun, Liming Gong, Qiong Ge, Wen Shi, Xinying Wang, Wenwu Yao, Zhangnv Yang, Fang Xu, Chen Chen, Enfu Chen, Zhen Wang, Zhiping Chen, Jianmin Jiang, Chonggao Hu 	|
 | EPI_ISL_402132 	| Wuhan Jinyintan Hospital 	| Hubei Provincial Center <br>for Disease Control and Prevention 	| Bin Fang, Xiang Li, Xiao Yu, Linlin Liu, Bo Yang, Faxian Zhan, Guojun Ye, Xixiang Huo, Junqiang Xu, Bo Yu, Kun Cai, Jing Li, Yongzhong Jiang. 	|
