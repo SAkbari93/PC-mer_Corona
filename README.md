@@ -17,6 +17,13 @@
 | Test-5 	| 99.33 	| 99.36 	| 99.55 	| 99.33 	|
 | Test-6 	| 100 	| 100 	| 100 	| 100 	|
 | Human Coronavirus 	| 100 	| 100 	| 100 	| 100 	| 
+###  Test Accuracy (Covid-19 Dataset) 
+| Datasets 	| Testing datasets	| Prediction Accuracy 	| Predicted label 	| 
+|:---:	|:---:	|:---:	|:---:	|
+| Test-1 	| 29 Covid-19 Virus sequences	| 100 	| Riboviria 	| 
+| Test-2 	| 29 Covid-19 Virus sequences	| 100 	| Coronaviridae 	| 
+| Test-3(a/b) 	| 29 Covid-19 Virus sequences	| 100 	| Betacoronavirus	|
+
 ### Time Performace:
 As another advantage of our proposed encoding method, PC-mer can significantly improve the total processing time, which includes the runtimes of preprocessing, training, and testing procedures. Thanks to its powerful encoding algorithm and thus, facilitating usage of simple machine learning-based models to classify Coronaviridae family, all classification experiments, including preprocessing, training, and testing steps, have been performed on a desktop computer and a CPU processor. 
 
