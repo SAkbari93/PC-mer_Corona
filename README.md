@@ -11,6 +11,10 @@ As another advantage of our proposed encoding method, PC-mer can significantly i
 
 ![Time2(5)](https://user-images.githubusercontent.com/91915096/172781868-14a579f4-4542-43e4-980c-9094a3241d89.png)
 
+### Memory Consumption
+![data-generated-nv(![data-generated-nv(4)](https://user-images.githubusercontent.com/91915096/172797179-c81ecd4a-f140-4a0b-a7ba-5b4b90dd238d.png)
+4)]()
+
 ### Classification Accuracy: 
 | Datasets 	| Accuracy <br>(%) 	| F1 <br>(%) 	| Precision <br>(%) 	| Recall <br>(%) 	|
 |:---:	|:---:	|:---:	|:---:	|:---:	|
@@ -22,9 +26,6 @@ As another advantage of our proposed encoding method, PC-mer can significantly i
 | Test-5 	| 99.33 	| 99.36 	| 99.55 	| 99.33 	|
 | Test-6 	| 100 	| 100 	| 100 	| 100 	|
 | Human Coronavirus 	| 100 	| 100 	| 100 	| 100 	|
-
-### Memory Consumption
-![data-generated-nv(4)](https://user-images.githubusercontent.com/91915096/172793989-0e640fac-da23-43d7-ba7d-382b02ecaf74.png)
 
 
 ## PREREQUISITES
