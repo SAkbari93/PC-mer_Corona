@@ -11,7 +11,7 @@ As another advantage of our proposed encoding method, PC-mer can significantly i
 
 ![Time2(5)](https://user-images.githubusercontent.com/91915096/172781868-14a579f4-4542-43e4-980c-9094a3241d89.png)
 
-## PC-mer's Performance 
+### Classification Accuracy 
 | Datasets 	| Accuracy <br>(%) 	| F1 <br>(%) 	| Precision <br>(%) 	| Recall <br>(%) 	|
 |:---:	|:---:	|:---:	|:---:	|:---:	|
 | Test-1 	| 97.25 	| 97.23 	| 97.38 	| 97.25 	|
