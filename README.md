@@ -12,8 +12,8 @@ As another advantage of our proposed encoding method, PC-mer can significantly i
 ![Time2(5)](https://user-images.githubusercontent.com/91915096/172781868-14a579f4-4542-43e4-980c-9094a3241d89.png)
 
 ### Memory Consumption
-![data-generated-nv(![data-generated-nv(4)](https://user-images.githubusercontent.com/91915096/172797179-c81ecd4a-f140-4a0b-a7ba-5b4b90dd238d.png)
-4)]()
+
+![data-generated-nv(4)](https://user-images.githubusercontent.com/91915096/172797306-82d37634-55dd-46c2-9ebd-e0fe0f77cc04.png)
 
 ### Classification Accuracy: 
 | Datasets 	| Accuracy <br>(%) 	| F1 <br>(%) 	| Precision <br>(%) 	| Recall <br>(%) 	|
