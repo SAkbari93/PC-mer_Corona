@@ -7,6 +7,8 @@
 
 ## PC-mer's Performance 
 ### Classification Accuracy: 
+Memory Consumption (PC-mer VS. FCGR)           |  Classification Accuracy for the variation of k-mer size in the range of [1,12]
+:-------------------------:|:-------------------------:
 | Datasets 	| Accuracy <br>(%) 	| F1 <br>(%) 	| Precision <br>(%) 	| Recall <br>(%) 	|
 |:---:	|:---:	|:---:	|:---:	|:---:	|
 | Test-1 	| 97.25 	| 97.23 	| 97.38 	| 97.25 	|
@@ -16,7 +18,8 @@
 | Test-4 	| 100 	| 100 	| 100 	| 100 	|
 | Test-5 	| 99.33 	| 99.36 	| 99.55 	| 99.33 	|
 | Test-6 	| 100 	| 100 	| 100 	| 100 	|
-| Human Coronavirus 	| 100 	| 100 	| 100 	| 100 	|
+| Human Coronavirus 	| 100 	| 100 	| 100 	| 100 	| |   ![acc](https://user-images.githubusercontent.com/91915096/172798793-96896d39-16f8-4840-81f4-d142e9875d65.png)
+
 
 ### Time Performace:
 As another advantage of our proposed encoding method, PC-mer can significantly improve the total processing time, which includes the runtimes of preprocessing, training, and testing procedures. Thanks to its powerful encoding algorithm and thus, facilitating usage of simple machine learning-based models to classify Coronaviridae family, all classification experiments, including preprocessing, training, and testing steps, have been performed on a desktop computer and a CPU processor. 
