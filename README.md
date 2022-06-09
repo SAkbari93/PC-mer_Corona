@@ -23,6 +23,10 @@ As another advantage of our proposed encoding method, PC-mer can significantly i
 | Test-6 	| 100 	| 100 	| 100 	| 100 	|
 | Human Coronavirus 	| 100 	| 100 	| 100 	| 100 	|
 
+### Memory Consumption
+![data-generated-nv(4)](https://user-images.githubusercontent.com/91915096/172793989-0e640fac-da23-43d7-ba7d-382b02ecaf74.png)
+
+
 ## PREREQUISITES
 The method was implemented in Python 3.8 with the use of scikit-learn library running on a normal desktop computer (CPU: i7-6500 2.5 GHz, RAM: 8 GB RAM, HD: 256GB Lexar, GPU: GeForce GTX 920M. 
 ## CONTACT
