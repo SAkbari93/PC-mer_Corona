@@ -18,7 +18,7 @@
 | Test-6 	| 100 	| 100 	| 100 	| 100 	|
 | Human Coronavirus 	| 100 	| 100 	| 100 	| 100 	| 
 ###  Test Accuracy (Covid-19 Dataset) 
-| Datasets 	| Testing datasets	| Prediction Accuracy 	| Predicted label 	| 
+| Datasets 	| Testing datasets	| Prediction Accuracy (%)	| Predicted label 	| 
 |:---:	|:---:	|:---:	|:---:	|
 | Test-1 	| 29 Covid-19 Virus sequences	| 100 	| Riboviria 	| 
 | Test-2 	| 29 Covid-19 Virus sequences	| 100 	| Coronaviridae 	| 
