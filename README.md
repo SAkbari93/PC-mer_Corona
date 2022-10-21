@@ -38,6 +38,17 @@ Memory Consumption (PC-mer VS. FCGR)           |  Classification Accuracy for th
 
 ## PREREQUISITES
 The method was implemented in Python 3.8 with the use of scikit-learn library running on a normal desktop computer (CPU: i7-6500 2.5 GHz, RAM: 8 GB RAM, HD: 256GB Lexar, GPU: GeForce GTX 920M. 
+# PC-mer Package
+
+Generate your own pc-mer.
+
+## Instructions
+
+1. Install:
+```
+pip install aesthetic-ascii
+```
+
 ## CONTACT
 
 <b>**Somayyeh Koohi**</b> <br>
