@@ -56,6 +56,10 @@ from physicochemical_mers import pcmer
 Seq = pcmer.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
 features = pcmer.PC_mer(Seq)
 ```
+3. Main Features:
+```python
+*Change_DNA():
+```
 ## CONTACT INFO
 
 <b>**Somayyeh Koohi**</b> <br>
