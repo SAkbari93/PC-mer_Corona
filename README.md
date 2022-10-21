@@ -45,7 +45,7 @@ Generate your own pc-mer.
 ## Instructions
 
 1. Install:
-```
+```python
 pip install pcmer
 ```
 2. Generate pcmer vectors:
