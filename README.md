@@ -46,7 +46,7 @@ Generate your own pc-mer.
 
 1. Install:
 ```
-pip install aesthetic-ascii
+pip install pcmer
 ```
 
 ## CONTACT
