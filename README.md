@@ -58,7 +58,9 @@ features = pcmer.PC_mer(Seq)
 ```
 3. Main Features:
 
-* *Change_DNA()*:
+* *Change_DNA(dna)*: Extracting sequences from fasta files and uppercasing their characters. 
+* *PC_mer(dna, k)*: k-mers generation function based on physicochemical properties. This function takes a sequence and size k as input and its output is the desired feature vector.
+* *GFL(mypath)*: Takes a path and automatically reads all the fasta files in the desired path and returns the generated feature vectors and their labels
 
 ## CONTACT INFO
 
