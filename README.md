@@ -58,7 +58,7 @@ features = pcmer.PC_mer(Seq)
 ```
 3. Main Features:
 
-**Change_DNA()*:
+* *Change_DNA()*:
 
 ## CONTACT INFO
 
