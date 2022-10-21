@@ -48,7 +48,14 @@ Generate your own pc-mer.
 ```
 pip install pcmer
 ```
+2. Generate pcmer vectors:
 
+```python
+from physicochemical_mers import pcmer
+#sample code
+Seq = pcmer.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
+features = pcmer.PC_mer(Seq)
+```
 ## CONTACT
 
 <b>**Somayyeh Koohi**</b> <br>
