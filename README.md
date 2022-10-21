@@ -51,10 +51,10 @@ pip install pcmer
 2. Generate pcmer vectors:
 
 ```python
-from physicochemical_mers import pcmer
+from pcmer import features
 #sample code
-Seq = pcmer.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
-features = pcmer.PC_mer(Seq)
+Seq = features.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
+features = features.PC_mer(Seq)
 ```
 3. Main Features:
 
