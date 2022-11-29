@@ -1,4 +1,4 @@
-# A new profiling approach for DNA sequences based on the nucleotides' physicochemical features: Corona case study
+# A new profiling approach for DNA sequences based on the nucleotides' physicochemical features for accurate analysis of SARS-COV-2 genomes
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AMshoka/PC-mer_Corona/blob/main/Code/Training.ipynb)
 ## PC-mer Workflow
 ![PC-mer(workflow)](https://user-images.githubusercontent.com/91915096/172617347-b66dff7f-f6fa-4b39-abdf-2ad99c528854.png)
@@ -18,7 +18,7 @@
 | Test-6 	| 100 	| 100 	| 100 	| 100 	|
 | Human Coronavirus 	| 100 	| 100 	| 100 	| 100 	| 
 ###  Test Accuracy (Covid-19 Dataset) 
-| Datasets 	| Testing datasets	| Prediction Accuracy 	| Predicted label 	| 
+| Datasets 	| Testing datasets	| Prediction Accuracy (%)	| Predicted label 	| 
 |:---:	|:---:	|:---:	|:---:	|
 | Test-1 	| 29 Covid-19 Virus sequences	| 100 	| Riboviria 	| 
 | Test-2 	| 29 Covid-19 Virus sequences	| 100 	| Coronaviridae 	| 
@@ -38,7 +38,34 @@ Memory Consumption (PC-mer VS. FCGR)           |  Classification Accuracy for th
 
 ## PREREQUISITES
 The method was implemented in Python 3.8 with the use of scikit-learn library running on a normal desktop computer (CPU: i7-6500 2.5 GHz, RAM: 8 GB RAM, HD: 256GB Lexar, GPU: GeForce GTX 920M. 
-## CONTACT
+# PC-mer Package
+
+Generate your own pc-mer.
+
+## Instructions
+
+1. Install:
+```python
+pip install pcmer
+```
+2. Generate pcmer vectors:
+
+```python
+from pcmer import features
+#sample code
+Seq = features.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
+features = features.PC_mer(Seq)
+```
+3. Main Features:
+
+* *Change_DNA(dna)*: Extracting sequences from fasta files and uppercasing their characters. 
+* *PC_mer(dna, k)*: k-mers generation function based on physicochemical properties. This function takes a sequence and size k as input and its output is the desired feature vector.
+* *GFL(mypath)*: Takes a path and automatically reads all the fasta files in the desired path and returns the generated feature vectors and their labels.
+* *get_metrics(y_test, y_prediction)*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on real and predicted labels.
+* *comp_confmat*: Create a confusion matriX.
+* *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
+
+## CONTACT INFO
 
 <b>**Somayyeh Koohi**</b> <br>
 Department of Computer Engineering <br>
