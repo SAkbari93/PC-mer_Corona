@@ -3,7 +3,18 @@
 ## PC-mer Workflow
 ![PC-mer(workflow)](https://user-images.githubusercontent.com/91915096/172617347-b66dff7f-f6fa-4b39-abdf-2ad99c528854.png)
 ## INTRODUCTION
-<p style='text-align: center;'> Our proposed encoding method, PC-mer, is an ultra-fast, alignment-free, accurate, and compact feature extraction method which is compatible with the wide range of machine learning classifiers and can be imple-mented on the simple processing systems. Our simulation results are obtained through a comprehensive analysis of over 5874 unique viral sequences which are divided into 8 datasets, and confirm the superiority of the method, in terms of classification accuracy, runtime, and memory usage. Similar to the k-mer based methods, the applicability of the PC-mer approach, does not end here and it can be also employed in many computational comparison methods. This capability was examined by using the PC-mer and the Manhattan distance to analyze a dataset including 5 samples from 7 different classes. We compared the results to those obtained by an alignment approach. The distance matrices derived by these two methods have acorrelation coefficient value of 98%, as reported in this paper. This study suggests that a proper alignment-free approach for comparative genomics study can be used when the timely taxonomic classification is of the essence, such as at critical periods during novel viral outbreaks. For this purpose, we developed a package based on PC-mer encoding method including two parts: 1) an ML-based classifier, and 2) a computational comparison tool. The ML-based classi-fier is a fast and accurate method classifying the coronaviruses samples from 7 classes by means of the simple classifiers which can also get input sequences from NCBI database by IDs. On the other hand, the computa-tional comparison tool of this package computes a score for each pair of input sequences as an estimation of their dissimilarity. In all, the comprehensive analysis of the PC-mer approach indicates that it is also applica-ble for more detailed analysis of coronaviruses, examining intraspecies samples, as well as SARS-COV-2 samples from other countries. Fur-thermore, since k-mer based methods are used in a variety of applications, like metagenomics classification, we will investigate adoption of PC-mer encoding method in these applications in future studies as well.</p>
+<p style='text-align: center;'> The classification of different organisms into subtypes is one of the most important tools of organism
+studies, and among them, the classification of viruses itself has been the focus of many studies due to
+their use in virology and epidemiology. Many methods have been proposed to classify viruses, some of
+which are designed for a specific family of organisms and some of which are more general. But still,
+especially for certain categories such as Influenza and HIV, classification is facing performance
+challenges as well as processing and memory bottlenecks. In this way, we designed an automated
+classifier, called PC-mer, that is based on k-mer and physicochemical characteristics of nucleotides,
+which reduces the number of features about 2 k times compared to the alternative methods based on k-mer,
+and compared to integer and one-hot encoding methods, it is possible to keep the number of features
+constant despite the growth of the sequence length. In this way, it also increases the training speed by an
+average of 88%. This improvement in processing complexity is provided while PC-mer can also improve
+the classifying performance for a variety of virus families.</p>
 
 ## PC-mer's Performance 
 ### Classification Accuracy: 
