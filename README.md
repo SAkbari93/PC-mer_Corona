@@ -54,7 +54,7 @@ The method was implemented in Python 3.8 with the use of scikit-learn library ru
 ## Main Features
 Let's Take a Rapid Tour of PC-mer Functions:
 
-* ```*Change_DNA(dna)*```: This function takes the contents of a fasta file and extracts the nucleotides. Also, all nucleotides are replaced by capital letters.
+* *```Change_DNA(dna)```*: This function takes the contents of a fasta file and extracts the nucleotides. Also, all nucleotides are replaced by capital letters.
 
 ```python
 #Example
