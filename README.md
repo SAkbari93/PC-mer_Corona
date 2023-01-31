@@ -57,9 +57,11 @@ Let's Take a Rapid Tour of PC-mer Functions:
 * ```Change_DNA(dna)```: This function takes the contents of a fasta file and extracts the nucleotides. Also, all nucleotides are replaced by capital letters.
 
 ```python
-#example
+#Example
 dna=">MN908947.3 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome\nATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA"
 Change_DNA(dna)
+#Output:
+'ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA'
 ```
 * *PC_mer(dna, k)*: k-mers generation function based on physicochemical properties. This function takes a sequence and size k as input and its output is the desired feature vector.
 * *GFL(mypath)*: Takes a path and automatically reads all the fasta files in the desired path and returns the generated feature vectors and their labels.
