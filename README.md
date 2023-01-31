@@ -70,7 +70,17 @@ Let's Take a Rapid Tour of PC-mer Functions:
 #Output:
 array([16, 14, 13, 27, 16, 15, 15, 24, 27, 18, 17,  8])
 ```
-* *GFL(mypath)*: Takes a path and automatically reads all the fasta files in the desired path and returns the generated feature vectors and their labels.
+* *```GFL(mypath)```*: Takes a ``path`` and automatically reads all the fasta files in the desired path and returns the generated ``feature vectors`` and their ``labels``.
+```python
+#Example
+>>> GFL('data',2)
+#Output:
+([array([ 7327,  7490,  7489,  7597,  8887,  6570,  6570,  7876, 10780,
+        7768,  7767,  3588]), array([ 7315,  7490,  7489,  7597,  8887,  6570,  6570,  7864, 10768,
+        7768,  7767,  3588]), array([ 7291,  7469,  7468,  7574,  8861,  6627,  6627,  7687, 10391,
+        7817,  7816,  3778]), array([ 7257,  7453,  7452,  7570,  8793,  6638,  6638,  7663, 10390,
+        7799,  7798,  3745])], [0, 0, 1, 1])
+```
 * *get_metrics(y_test, y_prediction)*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on real and predicted labels.
 * *comp_confmat*: Create a confusion matriX.
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
