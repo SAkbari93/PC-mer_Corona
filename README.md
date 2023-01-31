@@ -51,7 +51,17 @@ Memory Consumption (PC-mer VS. FCGR)           |  Classification Accuracy for th
 The method was implemented in Python 3.8 with the use of scikit-learn library running on a normal desktop computer (CPU: i7-6500 2.5 GHz, RAM: 8 GB RAM, HD: 256GB Lexar, GPU: GeForce GTX 920M. 
 # PC-mer Package
 
-Generate your own pc-mer.
+## Main Features:
+
+* *Change_DNA(dna)*: Extracting sequences from fasta files and uppercasing their characters. 
+* *PC_mer(dna, k)*: k-mers generation function based on physicochemical properties. This function takes a sequence and size k as input and its output is the desired feature vector.
+* *GFL(mypath)*: Takes a path and automatically reads all the fasta files in the desired path and returns the generated feature vectors and their labels.
+* *get_metrics(y_test, y_prediction)*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on real and predicted labels.
+* *comp_confmat*: Create a confusion matriX.
+* *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
+
+Generate your own pc-mer😉.
+
 
 ## Instructions
 
