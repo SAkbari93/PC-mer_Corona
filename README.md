@@ -158,7 +158,7 @@ Seq = Change_DNA('id\nAGGAAAAGCCAACCAACCTCGATCTCTTGTAcct')
 features = PC_mer(Seq, 2)
 ```
 3. A simple implementation\
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AMshoka/PC-mer_Corona/blob/main/Code/Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14VFx61B0zlvhDrPtV2T-6vE6_blWJrBS#scrollTo=AfhPO8PA3Ojf)
 
 ## CONTACT INFO
 
