@@ -123,9 +123,8 @@ array([[3., 0., 0., 0., 1.],
                       target_names = ['2019-nCoV','Sarbecovirus'],
                       title        = "Test-6")
 #Output:
-![AMPClass](https://user-images.githubusercontent.com/91915096/216005088-7c83b86a-3de8-4b10-ae22-7424404d3b74.png)
-
 ```
+![AMPClass](https://user-images.githubusercontent.com/91915096/216005088-7c83b86a-3de8-4b10-ae22-7424404d3b74.png)
 
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
 
