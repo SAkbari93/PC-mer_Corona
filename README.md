@@ -115,7 +115,7 @@ array([[3., 0., 0., 0., 1.],
        [0., 1., 0., 0., 0.],
        [0., 1., 1., 0., 0.]])
 ```
-* *```plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None, normalize=True)```*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
+* *```plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None, normalize=True)```*: This function displays the ```Confusion Matrix``` based on comp_confmat function. The inputs of this function are cm (```output of comp_confmat function```) and  ```target_names```.
 
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
 
