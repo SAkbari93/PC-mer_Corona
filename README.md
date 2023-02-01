@@ -154,10 +154,11 @@ pip install pcmer
 ```python
 from pcmer import features
 #sample code
-Seq = features.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
-features = features.PC_mer(Seq, 2)
+Seq = Change_DNA('id\nAGGAAAAGCCAACCAACCTCGATCTCTTGTAcct')
+features = PC_mer(Seq, 2)
 ```
-
+3. A simple implementation
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AMshoka/PC-mer_Corona/blob/main/Code/Training.ipynb)
 
 ## CONTACT INFO
 
