@@ -143,7 +143,7 @@ Seq('ATATTAGGTTTTTACCTTCCCAGGTAACAAACCAACTAACTCTCGATCTCTTGT...AAA')
 Now, generate your own pc-mer😉.
 
 
-## Instructions
+## Quick Access Instructions
 
 1. Install:
 ```python
