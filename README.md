@@ -125,7 +125,7 @@ array([[3., 0., 0., 0., 1.],
 ```
 
 
-* *pcmer_api(fname,seqid)*: ```PCmer_api```` function downloads sequences from NCBI for training and testing PC-mer pipeline automatically. The inputs of this function are fname (```your desired name for downloaded file```) and  ```seqid```.
+* *pcmer_api(fname,seqid)*: ```PCmer_api``` function downloads sequences from NCBI for training and testing PC-mer pipeline automatically. The inputs of this function are fname (```your desired name for downloaded sample```) and  ```seqid```.
 ```python
 #Example
 >>> pcmer_api('sample-1','MG772933.1')
