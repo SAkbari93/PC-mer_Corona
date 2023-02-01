@@ -157,7 +157,7 @@ from pcmer import features
 Seq = features.Change_DNA('id\nAGGAAAAGCCAACCAACCTCGATCTCTTGTAcct')
 features = features.PC_mer(Seq, 2)
 ```
-## * A simple implementation
+## * A simple implementation *
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14VFx61B0zlvhDrPtV2T-6vE6_blWJrBS#scrollTo=AfhPO8PA3Ojf)
 
 ## CONTACT INFO
@@ -165,6 +165,6 @@ features = features.PC_mer(Seq, 2)
 <b>**Somayyeh Koohi**</b> <br>
 Department of Computer Engineering <br>
 Sharif University of Technology <br>
-e-mail: koohi@sharfi.edu <br>
-WWW: http://sharif.ir/~koohi/
+E-mail: koohi@sharfi.edu <br>
+Home page: http://sharif.ir/~koohi/
 
