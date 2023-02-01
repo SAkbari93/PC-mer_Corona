@@ -122,11 +122,23 @@ array([[3., 0., 0., 0., 1.],
                       normalize    = False,
                       target_names = ['2019-nCoV','Sarbecovirus'],
                       title        = "Test-6")
-#Output:
 ```
-![AMPClass](https://user-images.githubusercontent.com/91915096/216005088-7c83b86a-3de8-4b10-ae22-7424404d3b74.png)
+
 
 * *pcmer_api(fname,seqid)*: ```PCmer_api```` function downloads sequences from NCBI for training and testing PC-mer pipeline automatically. The inputs of this function are fname (```your desired name for downloaded file```) and  ```seqid```.
+```python
+#Example
+>>> pcmer_api('sample-1','MG772933.1')
+
+#Outputs:
+Saved
+Parsing...
+ID: MG772933.1
+Name: MG772933.1
+Description: MG772933.1 Bat SARS-like coronavirus isolate bat-SL-CoVZC45, complete genome
+Number of features: 0
+Seq('ATATTAGGTTTTTACCTTCCCAGGTAACAAACCAACTAACTCTCGATCTCTTGT...AAA')
+```
 
 Generate your own pc-mer😉.
 
