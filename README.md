@@ -126,7 +126,7 @@ array([[3., 0., 0., 0., 1.],
 ```
 ![AMPClass](https://user-images.githubusercontent.com/91915096/216005088-7c83b86a-3de8-4b10-ae22-7424404d3b74.png)
 
-* *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
+* *pcmer_api(fname,seqid)*: PCmer_api function automatically downloads sequences from NCBI for training and testing PC-mer pipeline.The inputs of this function are fname (```your desired name for downloaded file```) and  ```seqid```.
 
 Generate your own pc-mer😉.
 
