@@ -1,5 +1,5 @@
 # A new profiling approach for DNA sequences based on the nucleotides' physicochemical features for accurate analysis of SARS-COV-2 genomes
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AMshoka/PC-mer_Corona/blob/main/Code/Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14VFx61B0zlvhDrPtV2T-6vE6_blWJrBS#scrollTo=AfhPO8PA3Ojf)
 ## PC-mer Workflow
 ![PC-mer(workflow)](https://user-images.githubusercontent.com/91915096/172617347-b66dff7f-f6fa-4b39-abdf-2ad99c528854.png)
 ## INTRODUCTION
