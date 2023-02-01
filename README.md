@@ -93,8 +93,15 @@ recall = 1.000
 f1 = 1.000
 ```
 
-* *```get_metrics(y_test, y_predicted)```*: Calculation of accuracy metrics (```F1```, ```accuracy```, ```recall```, ```precision```) based on ```Ground truth``` and ```predicted labels```.
-
+* *```get_metrics(Groundtruth, Predicted)```*: Calculation of accuracy metrics (```F1```, ```accuracy```, ```recall```, ```precision```) based on ```Ground truth``` and ```predicted labels```.
+```python
+#Example
+>>> actual = [1, 3, 3, 2, 5, 5, 3, 2, 1, 4, 3, 2, 1, 1, 2]
+>>> predicted = [1, 2, 3, 4, 2, 3, 3, 2, 1, 2, 3, 1, 5, 1, 1]
+>>> get_metrics(actual,predicted)
+#Output:
+(0.4266666666666667, 0.4666666666666667, 0.4444444444444444, 0.4666666666666667)
+```
 * *comp_confmat*: Create a confusion matriX.
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
 
