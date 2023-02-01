@@ -81,7 +81,7 @@ array([16, 14, 13, 27, 16, 15, 15, 24, 27, 18, 17,  8])
         7817,  7816,  3778]), array([ 7257,  7453,  7452,  7570,  8793,  6638,  6638,  7663, 10390,
         7799,  7798,  3745])], [0, 0, 1, 1])
 ```
-* *```train(PCmer_features, label, folds, clf)```*: To evaluate the impact of encoding unit, we use six popular and practical supervised-learning based classification models (i.e. Logistic Regression (LR), Gaussian naïve Bayes (GNB), linear discriminant analysis (LDA), multi-layer perceptron (MLP), decision tree (DT), Linear Support Vector Classification (SVC)).So, ```Train``` function is designed to classify encoded genomic sequences (```PCmer_features```). 
+* *```train(PCmer_features, label, folds, clf)```*: To evaluate the impact of encoding unit, we use six popular and practical supervised-learning based classification models (i.e. Logistic Regression (LR), Gaussian naïve Bayes (GNB), linear discriminant analysis (LDA), multi-layer perceptron (MLP), decision tree (DT), Linear Support Vector Classification (SVC)).So, ```Train``` function is designed to classify encoded genomic sequences (```PCmer_features```) automatically. This function takes ```PCmer_features```, ```Ground truth labels```, the number of cross-validation operations (```folds```) and classification algorithm (```clf```)  and size ``k`` as input and its output is the desired feature vector.
 
 * *get_metrics(y_test, y_prediction)*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on real and predicted labels.
 * *comp_confmat*: Create a confusion matriX.
