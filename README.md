@@ -169,8 +169,7 @@ convert sequences of any length into a fixed-length matrix. In this way, compare
 integer and one-hot encoding, the number of extracted features remains constant. For more detailed
 comparison, the numbers of extracted features by the four methods (i.e. PC-mer (k = 11), k-mer (k = 11),
 integer, and one-hot) are shown in below Figure for various sequence lengths.
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+ $(ax^2 + bx + c = 0)$ 
 ## CONTACT INFO
 
 <b>**Somayyeh Koohi**</b> <br>
