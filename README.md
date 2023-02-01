@@ -115,6 +115,8 @@ array([[3., 0., 0., 0., 1.],
        [0., 1., 0., 0., 0.],
        [0., 1., 1., 0., 0.]])
 ```
+* *```plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None, normalize=True)```*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
+
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
 
 Generate your own pc-mer😉.
