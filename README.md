@@ -93,7 +93,7 @@ recall = 1.000
 f1 = 1.000
 ```
 
-* *```get_metrics(y_test, y_predicted)```*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on Ground truth and predicted labels.
+* *```get_metrics(y_test, y_predicted)```*: Calculation of accuracy metrics (```F1```, ```accuracy```, ```recall```, ```precision```) based on ```Ground truth``` and ```predicted labels```.
 
 * *comp_confmat*: Create a confusion matriX.
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
