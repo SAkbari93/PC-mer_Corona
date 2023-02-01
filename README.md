@@ -140,7 +140,7 @@ Number of features: 0
 Seq('ATATTAGGTTTTTACCTTCCCAGGTAACAAACCAACTAACTCTCGATCTCTTGT...AAA')
 ```
 
-Generate your own pc-mer😉.
+Now, generate your own pc-mer😉.
 
 
 ## Instructions
@@ -155,16 +155,9 @@ pip install pcmer
 from pcmer import features
 #sample code
 Seq = features.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
-features = features.PC_mer(Seq)
+features = features.PC_mer(Seq, 2)
 ```
-3. Main Features:
 
-* *Change_DNA(dna)*: Extracting sequences from fasta files and uppercasing their characters. 
-* *PC_mer(dna, k)*: k-mers generation function based on physicochemical properties. This function takes a sequence and size k as input and its output is the desired feature vector.
-* *GFL(mypath)*: Takes a path and automatically reads all the fasta files in the desired path and returns the generated feature vectors and their labels.
-* *get_metrics(y_test, y_prediction)*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on real and predicted labels.
-* *comp_confmat*: Create a confusion matriX.
-* *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
 
 ## CONTACT INFO
 
