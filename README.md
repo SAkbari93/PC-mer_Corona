@@ -160,6 +160,10 @@ features = features.PC_mer(Seq, 2)
 ## * A simple implementation *
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14VFx61B0zlvhDrPtV2T-6vE6_blWJrBS#scrollTo=AfhPO8PA3Ojf)
 
+## Method's Limitations
+
+* Length of Sequences:
+
 ## CONTACT INFO
 
 <b>**Somayyeh Koohi**</b> <br>
