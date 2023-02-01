@@ -169,7 +169,7 @@ convert sequences of any length into a fixed-length matrix. In this way, compare
 integer and one-hot encoding, the number of extracted features remains constant. For more detailed
 comparison, the numbers of extracted features by the four methods (i.e. PC-mer (k = 11), k-mer (k = 11),
 integer, and one-hot) are shown in below Figure for various sequence lengths.
-<img width="1050" alt="ءثئخقغ" src="https://user-images.githubusercontent.com/91915096/215283181-d6152874-e0ae-4eec-96da-8588db05b9c7.PNG">
+<img width="800" alt="ءثئخقغ" src="https://user-images.githubusercontent.com/91915096/215283181-d6152874-e0ae-4eec-96da-8588db05b9c7.PNG">
 ## CONTACT INFO
 
 <b>**Somayyeh Koohi**</b> <br>
