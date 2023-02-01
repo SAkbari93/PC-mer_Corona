@@ -102,7 +102,19 @@ f1 = 1.000
 #Output:
 (0.4266666666666667, 0.4666666666666667, 0.4444444444444444, 0.4666666666666667)
 ```
-* *comp_confmat*: Create a confusion matriX.
+* *```comp_confmat(Groundtruth, Predicted)```*: Create a confusion matrix based on ```Ground truth``` and ```predicted labels```.
+```python
+#Example
+>>> actual = [1, 3, 3, 2, 5, 5, 3, 2, 1, 4, 3, 2, 1, 1, 2]
+>>> predicted = [1, 2, 3, 4, 2, 3, 3, 2, 1, 2, 3, 1, 5, 1, 1]
+>>> comp_confmat(actual,predicted)
+#Output:
+array([[3., 0., 0., 0., 1.],
+       [2., 1., 0., 1., 0.],
+       [0., 1., 3., 0., 0.],
+       [0., 1., 0., 0., 0.],
+       [0., 1., 1., 0., 0.]])
+```
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
 
 Generate your own pc-mer😉.
