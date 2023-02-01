@@ -163,12 +163,12 @@ features = features.PC_mer(Seq, 2)
 ## Method's Limitations
 
 * ```Length of Sequences```: As mentioned, PC-mer is based on k-mer and physicochemical characteristics of nucleotides,
-which reduces the number of features about $```2^k```$ times compared to the alternative methods based on k-mer,
+which reduces the number of features about $2^k$ times compared to the alternative methods based on k-mer,
 and compared to integer and one-hot encoding methods, Also, PC-mer, similar to other k-mer-based methods, has the ability to
 convert sequences of any length into a fixed-length matrix. In this way, compared to methods such as
 integer and one-hot encoding, the number of extracted features remains constant. For more detailed
 comparison, the numbers of extracted features by the four methods (i.e. PC-mer (k = 11), k-mer (k = 11),
-integer, and one-hot) are shown in below Figure for various sequence lengths. Although PC-mer can convert sequences of any length into a fixed-length matrix, its generalizability to achieve the acceptable accuracy for long sequences like humans is still a question. Therefore, we would examine and deeply investigate the PC-mer for other datasets, as a stand-alone study, as our future work. 
+integer, and one-hot) are shown in below Figure for various sequence lengths. Although PC-mer can convert sequences of any length into a fixed-length matrix, its generalizability to achieve the acceptable accuracy for long sequences like humans is still a question. We achieved remarkable accuracy for the Coronavirus family with a maximum sequence length of 50000, but it is an open problem for datasets with different abundance, number of categories, sequence length and taxonomic levels.Therefore, we would examine and deeply investigate the PC-mer for other datasets, as a stand-alone study (```As you can see here```), as our future work. 
 <div align="center">
     <img width="800" alt="ءثئخقغ" src="https://user-images.githubusercontent.com/91915096/215283181-d6152874-e0ae-4eec-96da-8588db05b9c7.PNG">
 </div>
