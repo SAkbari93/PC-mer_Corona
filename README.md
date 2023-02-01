@@ -81,6 +81,8 @@ array([16, 14, 13, 27, 16, 15, 15, 24, 27, 18, 17,  8])
         7817,  7816,  3778]), array([ 7257,  7453,  7452,  7570,  8793,  6638,  6638,  7663, 10390,
         7799,  7798,  3745])], [0, 0, 1, 1])
 ```
+* ```*train(PCmer_features, label, folds, clf)*```: This function is designed to classify encoded genomic sequences(```PCmer_features```) based on six machine learning classification algorithms.
+
 * *get_metrics(y_test, y_prediction)*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on real and predicted labels.
 * *comp_confmat*: Create a confusion matriX.
 * *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
