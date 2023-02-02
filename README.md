@@ -147,7 +147,7 @@ Now, generate your own pc-mer😉.
 
 1. Install:
 ```python
-pip install pcmer
+pip install physicochemical-mers==1.0.0
 ```
 2. Generate pcmer vectors:
 
