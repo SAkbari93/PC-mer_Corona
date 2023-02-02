@@ -1,9 +1,20 @@
 # A new profiling approach for DNA sequences based on the nucleotides' physicochemical features for accurate analysis of SARS-COV-2 genomes
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AMshoka/PC-mer_Corona/blob/main/Code/Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14VFx61B0zlvhDrPtV2T-6vE6_blWJrBS#scrollTo=AfhPO8PA3Ojf)
 ## PC-mer Workflow
 ![PC-mer(workflow)](https://user-images.githubusercontent.com/91915096/172617347-b66dff7f-f6fa-4b39-abdf-2ad99c528854.png)
 ## INTRODUCTION
-<p style='text-align: center;'> Our proposed encoding method, PC-mer, is an ultra-fast, alignment-free, accurate, and compact feature extraction method which is compatible with the wide range of machine learning classifiers and can be imple-mented on the simple processing systems. Our simulation results are obtained through a comprehensive analysis of over 5874 unique viral sequences which are divided into 8 datasets, and confirm the superiority of the method, in terms of classification accuracy, runtime, and memory usage. Similar to the k-mer based methods, the applicability of the PC-mer approach, does not end here and it can be also employed in many computational comparison methods. This capability was examined by using the PC-mer and the Manhattan distance to analyze a dataset including 5 samples from 7 different classes. We compared the results to those obtained by an alignment approach. The distance matrices derived by these two methods have acorrelation coefficient value of 98%, as reported in this paper. This study suggests that a proper alignment-free approach for comparative genomics study can be used when the timely taxonomic classification is of the essence, such as at critical periods during novel viral outbreaks. For this purpose, we developed a package based on PC-mer encoding method including two parts: 1) an ML-based classifier, and 2) a computational comparison tool. The ML-based classi-fier is a fast and accurate method classifying the coronaviruses samples from 7 classes by means of the simple classifiers which can also get input sequences from NCBI database by IDs. On the other hand, the computa-tional comparison tool of this package computes a score for each pair of input sequences as an estimation of their dissimilarity. In all, the comprehensive analysis of the PC-mer approach indicates that it is also applica-ble for more detailed analysis of coronaviruses, examining intraspecies samples, as well as SARS-COV-2 samples from other countries. Fur-thermore, since k-mer based methods are used in a variety of applications, like metagenomics classification, we will investigate adoption of PC-mer encoding method in these applications in future studies as well.</p>
+<p style='text-align: center;'> The classification of different organisms into subtypes is one of the most important tools of organism
+studies, and among them, the classification of viruses itself has been the focus of many studies due to
+their use in virology and epidemiology. Many methods have been proposed to classify viruses, some of
+which are designed for a specific family of organisms and some of which are more general. But still,
+especially for certain categories such as Influenza and HIV, classification is facing performance
+challenges as well as processing and memory bottlenecks. In this way, we designed an automated
+classifier, called PC-mer, that is based on k-mer and physicochemical characteristics of nucleotides,
+which reduces the number of features about 2 k times compared to the alternative methods based on k-mer,
+and compared to integer and one-hot encoding methods, it is possible to keep the number of features
+constant despite the growth of the sequence length. In this way, it also increases the training speed by an
+average of 88%. This improvement in processing complexity is provided while PC-mer can also improve
+the classifying performance for a variety of virus families.</p>
 
 ## PC-mer's Performance 
 ### Classification Accuracy: 
@@ -40,36 +51,136 @@ Memory Consumption (PC-mer VS. FCGR)           |  Classification Accuracy for th
 The method was implemented in Python 3.8 with the use of scikit-learn library running on a normal desktop computer (CPU: i7-6500 2.5 GHz, RAM: 8 GB RAM, HD: 256GB Lexar, GPU: GeForce GTX 920M. 
 # PC-mer Package
 
-Generate your own pc-mer.
+## Main Features
+Let's Take a Rapid Tour of PC-mer Functions:
 
-## Instructions
+* *```Change_DNA(dna)```*: This function takes the contents of a fasta file and extracts the nucleotides. Also, all nucleotides are replaced by capital letters.
+
+```python
+#Example
+>>> dna=">MN908947.3 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome\nATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA"
+>>> Change_DNA(dna)
+#Output:
+'ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA'
+```
+* *```PC_mer(dna, k)```*: k-mers generation function based on physicochemical properties. This function takes a sequence and size ``k`` as input and its output is the desired feature vector.
+```python
+#Example
+>>> PC_mer(Seq,2)
+#Output:
+array([16, 14, 13, 27, 16, 15, 15, 24, 27, 18, 17,  8])
+```
+* *```GFL(path,k)```*: Takes a ``path`` and automatically reads all the fasta files in the desired path and returns the generated ``feature vectors`` and their ``labels``.
+```python
+#Example
+>>> GFL('data',2)
+#Output:
+([array([ 7327,  7490,  7489,  7597,  8887,  6570,  6570,  7876, 10780,
+        7768,  7767,  3588]), array([ 7315,  7490,  7489,  7597,  8887,  6570,  6570,  7864, 10768,
+        7768,  7767,  3588]), array([ 7291,  7469,  7468,  7574,  8861,  6627,  6627,  7687, 10391,
+        7817,  7816,  3778]), array([ 7257,  7453,  7452,  7570,  8793,  6638,  6638,  7663, 10390,
+        7799,  7798,  3745])], [0, 0, 1, 1])
+```
+* *```train(PCmer_features, label, folds, clf)```*: To evaluate the impact of encoding unit, we use six popular and practical supervised-learning based classification models (i.e. Logistic Regression (LR), Gaussian naïve Bayes (GNB), linear discriminant analysis (LDA), multi-layer perceptron (MLP), decision tree (DT), Linear Support Vector Classification (SVC)). So, ```Train``` function is designed to classify encoded genomic sequences (```PCmer_features```) automatically. This function takes ```PCmer_features```, ```Ground truth labels```, the number of cross-validation operations (```folds```) and classification algorithm (```clf```). Classification ```accuracy metrics``` and ```run time``` are the outputs of train function. 
+```python
+#Example
+>>> train(PCmer_features, label, 10,clf='LR')
+#Output:
+time = 0.09
+accuracy = 1.000
+precision = 1.000 
+recall = 1.000 
+f1 = 1.000
+```
+
+* *```get_metrics(Groundtruth, Predicted)```*: Calculation of accuracy metrics (```F1```, ```accuracy```, ```recall```, ```precision```) based on ```Ground truth``` and ```predicted labels```.
+```python
+#Example
+>>> actual = [1, 3, 3, 2, 5, 5, 3, 2, 1, 4, 3, 2, 1, 1, 2]
+>>> predicted = [1, 2, 3, 4, 2, 3, 3, 2, 1, 2, 3, 1, 5, 1, 1]
+>>> get_metrics(actual,predicted)
+#Output:
+(0.4266666666666667, 0.4666666666666667, 0.4444444444444444, 0.4666666666666667)
+```
+* *```comp_confmat(Groundtruth, Predicted)```*: Create a confusion matrix based on ```Ground truth``` and ```predicted labels```.
+```python
+#Example
+>>> actual = [1, 3, 3, 2, 5, 5, 3, 2, 1, 4, 3, 2, 1, 1, 2]
+>>> predicted = [1, 2, 3, 4, 2, 3, 3, 2, 1, 2, 3, 1, 5, 1, 1]
+>>> comp_confmat(actual,predicted)
+#Output:
+array([[3., 0., 0., 0., 1.],
+       [2., 1., 0., 1., 0.],
+       [0., 1., 3., 0., 0.],
+       [0., 1., 0., 0., 0.],
+       [0., 1., 1., 0., 0.]])
+```
+* *```plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=None, normalize=True)```*: This function displays the ```Confusion Matrix``` based on comp_confmat function. The inputs of this function are cm (```output of comp_confmat function```) and  ```target_names```.
+```python
+#Example
+>>> plot_confusion_matrix(cm=CM,
+                      normalize    = False,
+                      target_names = ['2019-nCoV','Sarbecovirus'],
+                      title        = "Test-6")
+```
+
+
+* *pcmer_api(fname,seqid)*: ```PCmer_api``` function downloads sequences from NCBI for training and testing PC-mer pipeline automatically. The inputs of this function are fname (```your desired name for downloaded sample```) and  ```seqid```.
+```python
+#Example
+>>> pcmer_api('sample-1','MG772933.1')
+
+#Outputs:
+Saved
+Parsing...
+ID: MG772933.1
+Name: MG772933.1
+Description: MG772933.1 Bat SARS-like coronavirus isolate bat-SL-CoVZC45, complete genome
+Number of features: 0
+Seq('ATATTAGGTTTTTACCTTCCCAGGTAACAAACCAACTAACTCTCGATCTCTTGT...AAA')
+```
+
+Now, generate your own pc-mer😉.
+
+
+## Quick Access Instructions
 
 1. Install:
 ```python
-pip install pcmer
+pip install physicochemical-mers==1.0.0
 ```
 2. Generate pcmer vectors:
 
 ```python
 from pcmer import features
 #sample code
-Seq = features.Change_DNA('AGGAAAAGCCAACCAACCTCGATCTCTTGTA')
-features = features.PC_mer(Seq)
+Seq = features.Change_DNA('id\nAGGAAAAGCCAACCAACCTCGATCTCTTGTAcct')
+features = features.PC_mer(Seq, 2)
 ```
-3. Main Features:
+## * A simple implementation *
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14VFx61B0zlvhDrPtV2T-6vE6_blWJrBS#scrollTo=AfhPO8PA3Ojf)
 
-* *Change_DNA(dna)*: Extracting sequences from fasta files and uppercasing their characters. 
-* *PC_mer(dna, k)*: k-mers generation function based on physicochemical properties. This function takes a sequence and size k as input and its output is the desired feature vector.
-* *GFL(mypath)*: Takes a path and automatically reads all the fasta files in the desired path and returns the generated feature vectors and their labels.
-* *get_metrics(y_test, y_prediction)*: Calculation of accuracy measures (F1, accuracy, recall, precision) based on real and predicted labels.
-* *comp_confmat*: Create a confusion matriX.
-* *pcmer_api*: Automatically download sequences from NCBI for training and testing PC-mer pipeline.
+## Method's Limitations
+
+* ```Length of Sequences```: As mentioned, PC-mer is based on k-mer and physicochemical characteristics of nucleotides,
+which reduces the number of features about $2^k$ times compared to the alternative methods based on k-mer,
+and compared to integer and one-hot encoding methods, Also, PC-mer, similar to other k-mer-based methods, has the ability to
+convert sequences of any length into a fixed-length matrix. In this way, compared to methods such as
+integer and one-hot encoding, the number of extracted features remains constant. For more detailed
+comparison, the numbers of extracted features by the four methods (i.e. PC-mer (k = 11), k-mer (k = 11),
+```Integer```, and ```one-hot```) are shown in below Figure for various sequence lengths. Although PC-mer can convert sequences of any length into a fixed-length matrix, its generalizability to achieve the acceptable accuracy for long sequences like humans is still a question. We achieved remarkable accuracy for the Coronavirus family with a maximum sequence length of ```50000```, but it is an open problem for datasets with different abundance, number of categories, sequence length and taxonomic levels. Therefore, we would examine and deeply investigate the ```PC-mer``` for other datasets, as a stand-alone study, as our future work. [```see here for other viral genome classification based on PC-mer```](https://github.com/AMshoka/PC-mer_viruses).
+<div align="center">
+    <img width="800" alt="ءثئخقغ" src="https://user-images.githubusercontent.com/91915096/215283181-d6152874-e0ae-4eec-96da-8588db05b9c7.PNG">
+</div>
+<br>
+
+* ```Acceptable Sequences```: Most of the studies classifying whole-genome sequences either focus on noise-free data, or assume noise elimination as the preprocessing step. As a key capability of PC-mer, we also admit ```whole genome sequences``` containing probable noises (```nucleotides that cannot be determined definitively during sequencing```), and remove these noises. Of course, there are other mechanisms, such as aligning the input sequences with their genome reference and making decisions about these letters according to the reference genome, which, of course, may not be definitive and depend on the amount of noises. In other words, these methods assume known input sequences, which is not necessarily the case in real problems. In other words, the input sequence may not be known, and so, consumers try to identify it with clustering and classification tools, so considering genome reference for aligning with it might be impossible. On the other hand, in the problems dealing with the whole-genome sequence, the ratio of noise to the length of the sequence is not so high to necessitate input alignment, while for those problems dealing with reads, such as metagenomics problems, the alignment solution is adopted. Of course, in the continuation of our studies on the PC-mer method and other data, we would also use ```reads```, such as ```metagenomics``` problems, and so, in future works, 
 
 ## CONTACT INFO
 
 <b>**Somayyeh Koohi**</b> <br>
 Department of Computer Engineering <br>
 Sharif University of Technology <br>
-e-mail: koohi@sharfi.edu <br>
-WWW: http://sharif.ir/~koohi/
+E-mail: koohi@sharfi.edu <br>
+Home page: http://sharif.ir/~koohi/
 

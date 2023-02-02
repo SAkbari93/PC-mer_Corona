@@ -2,3 +2,24 @@
 | Dataset 	| Clusters 	| Number of sequences 	| More info 	|
 |:---:	|:---:	|:---:	|:---:	|
 | Test-3b: <br>Coronaviridae; <br>60 sequences; 	| Alphacoronavirus <br>Betacoronavirus <br>Deltacoronavirus 	| 20 <br>20 <br>20 	| Maximum length: 31429 <br>Minimum length: 25402 <br>Median length: 28475 <br>Mean length: 28187 	|<br>Mean length: 8607 	|
+
+
+# Test-3b; Source: Virus-Host-DB; GISAID
+| Alphacoronavirus	|
+|:---:	|
+| JQ989272,JQ410000,DQ811787,FJ938058,NC_022103,NC_028752,EU420137,NC_038861,FJ938051,
+FJ938056,FJ938059,NC_034972,NC_028811,HQ392471,FJ938057,NC_028824,NC_028814,FJ938060
+,HM245926,NC_028833	|
+
+
+| Betacoronavirus	|
+|:---:	|
+| EF065513,FJ882942,FJ425185,HM211100,GQ153540,NC_006213,GQ153543,EF424624,FJ647220,FJ
+938065,EPI_ISL_402131,FJ938066,AY278554,DQ915164,DQ011855,FJ882945,FJ647225,FJ425184,F
+J415324,FJ882935	|
+
+| Deltacoronavirus	|
+|:---:	|
+| FJ376620,KJ481931,KJ567050,KJ601777,KJ601778,KJ601779,KJ601780,KJ769231,KM820765,KP981
+395,NC_011547,NC_011549,NC_011550,NC_016991,NC_016992,NC_016993,NC_016994,NC_01699
+5,NC_016996,NC_039208	|
